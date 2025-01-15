@@ -1,0 +1,7 @@
+@import "./theme";
+
+body {
+	background-color: $theme-blue-main;
+	color: $theme-white-main;
+	font-family: Inter;
+}
