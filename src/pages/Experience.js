@@ -1,8 +1,10 @@
-import "Experience.scss";
+import "./Experience.scss";
+import Navbar from "../components/Navbar.js";
 
-function Experience() {
+function Experience(props) {
 	return (
 		<div className="Experience">
+			<Navbar></Navbar>
 			<p>Experience</p>
 		</div>
 	);

@@ -1,8 +1,10 @@
-import "Home.scss";
+import "./Home.scss";
+import Navbar from "../components/Navbar.js";
 
-function Home() {
+function Home(props) {
 	return (
 		<div className="Home">
+			<Navbar></Navbar>
 			<p>Home</p>
 		</div>
 	);
