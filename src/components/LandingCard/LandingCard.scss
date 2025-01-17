@@ -22,7 +22,8 @@
 
 			.full-name {
 				color: $theme-yellow-main;
-				font-size: 4rem;
+				font-size: 4.5rem;
+				font-weight: normal;
 			}
 			.sub-title {
 				color: $theme-yellow-secondary;
@@ -33,6 +34,7 @@
 				display: block;
 				text-decoration: none;
 				font-size: 3rem;
+				margin-bottom: 30px;
 			}
 			.link::after,
 			.link {
@@ -44,10 +46,21 @@
 			margin-top: 100px;
 			border-left: solid 5px $theme-white-main;
 		}
-		.bioPicture {
-			border-radius: 50%;
+		.img-col {
 			width: 40%;
-			border: $theme-yellow-main solid 3px;
+			margin-top: 50px;
+			.bioPicture {
+				border-radius: 50%;
+				width: 100%;
+				border: $theme-yellow-main solid 3px;
+			}
+			.icon-row {
+				margin-top: 40px;
+				.icon {
+					font-size: 40px;
+					margin: 0px 10px 0px 10px;
+				}
+			}
 		}
 	}
 }

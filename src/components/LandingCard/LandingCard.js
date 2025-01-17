@@ -1,26 +1,44 @@
 import "./LandingCard.scss";
 import bioPic from "../../assets/profilepic.png";
 import { Link } from "react-router-dom";
-import icon from "react-icons";
+import { LuLinkedin } from "react-icons/lu";
+import { TbBrandGithub } from "react-icons/tb";
+import { CiCoffeeCup } from "react-icons/ci";
 
 function LandingCard(props) {
 	return (
 		<div className="LandingCard">
 			<div className="card-container">
-				<img className="bioPicture" alt="profile_pic" src={bioPic}></img>
+				<div className="img-col">
+					<img className="bioPicture" alt="profile_pic" src={bioPic}></img>
+					<div className="icon-row">
+						<span className="icon">
+							<LuLinkedin />
+						</span>
+						<span className="icon">
+							<TbBrandGithub />
+						</span>
+						<span className="icon">
+							<CiCoffeeCup />
+						</span>
+					</div>
+				</div>
 				<div className="vl"></div>
 				<div className="text-container">
 					<h1 className="full-name">Kevin Arista Solis</h1>
 					<h3 className="sub-title">Security and Software Engineer</h3>
 					<div className="nav-links">
+						<Link to="/about" className="link">
+							ABOUT
+						</Link>
 						<Link to="/experience" className="link">
-							Experience
+							EXPERIENCE
 						</Link>
 						<Link to="/blog" className="link">
-							Blog
+							BLOG
 						</Link>
 						<Link to="/contact" className="link">
-							Contact
+							CONTACT
 						</Link>
 					</div>
 				</div>
