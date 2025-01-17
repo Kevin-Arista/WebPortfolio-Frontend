@@ -1,0 +1,51 @@
+@import "../../styles/theme";
+// @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kranky&display=swap");
+
+.LandingCard {
+	width: 100%;
+	height: 80vh;
+	// background-color: blue;
+
+	.card-container {
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: 100%;
+		justify-content: space-around;
+		align-items: center;
+		// border: 1px solid red;
+
+		.text-container {
+			// background-color: rgba($color: #ffffff, $alpha: 0.1);
+			text-align: left;
+			margin-left: -100px;
+
+			.full-name {
+				color: $theme-yellow-main;
+				font-size: 4rem;
+			}
+			.sub-title {
+				color: $theme-yellow-secondary;
+			}
+			.link {
+				display: block;
+				text-decoration: none;
+				font-size: 3rem;
+			}
+			.link::after,
+			.link {
+				color: $theme-yellow-main;
+			}
+		}
+		.vl {
+			height: 100%;
+			margin-top: 100px;
+			border-left: solid 5px $theme-white-main;
+		}
+		.bioPicture {
+			border-radius: 50%;
+			width: 40%;
+			border: $theme-yellow-main solid 3px;
+		}
+	}
+}
