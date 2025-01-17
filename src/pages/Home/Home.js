@@ -1,6 +1,14 @@
 import "./Home.scss";
-import Navbar from "../../components/Navbar/Navbar.js";
+import LandingCard from "../../components/LandingCard/LandingCard.js";
+
 const quotes = [
+	"Engineering for Humanity",
+	"Immigrant Rights",
+	"First-Generation",
+	"Low-Income",
+	"Mexican-American",
+	"Family Bound",
+	"Hecho en Casa",
 	"Engineering for Humanity",
 	"Immigrant Rights",
 	"First-Generation",
@@ -15,11 +23,14 @@ function Home(props) {
 		<div className="Home">
 			<marquee direction="left" loop="">
 				{quotes.map((phrase, index) => (
-					<span key={index}>{phrase}</span>
+					<span className="phrases" key={index}>
+						<b>
+							<i>{phrase}</i>
+						</b>
+					</span>
 				))}
 			</marquee>
-			<Navbar></Navbar>
-			<p>Home</p>
+			<LandingCard></LandingCard>
 		</div>
 	);
 }

@@ -1,7 +1,13 @@
 .Home {
+	padding: 50px 100px 0 100px;
 	marquee {
 		border-top: 1px white solid;
 		border-bottom: 1px white solid;
 		color: white;
+		padding: 5px 0px 5px 0px;
+	}
+	.phrases {
+		padding-right: 100px;
+		font-size: 20px;
 	}
 }
