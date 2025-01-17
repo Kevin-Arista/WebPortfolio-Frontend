@@ -21,15 +21,15 @@ const quotes = [
 function Home(props) {
 	return (
 		<div className="Home">
-			<marquee direction="left" loop="">
-				{quotes.map((phrase, index) => (
-					<span className="phrases" key={index}>
-						<b>
+			<div className="marquee">
+				<div className="marquee-track">
+					{quotes.map((phrase, index) => (
+						<span className="phrases" key={index}>
 							<i>{phrase}</i>
-						</b>
-					</span>
-				))}
-			</marquee>
+						</span>
+					))}
+				</div>
+			</div>
 			<LandingCard></LandingCard>
 		</div>
 	);

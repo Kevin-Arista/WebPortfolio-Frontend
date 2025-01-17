@@ -1,13 +1,29 @@
 .Home {
 	padding: 50px 100px 0 100px;
-	marquee {
+	.marquee {
+		overflow: clip;
+	}
+	.marquee-track {
+		display: flex;
 		border-top: 1px white solid;
 		border-bottom: 1px white solid;
 		color: white;
+		width: max-content;
 		padding: 5px 0px 5px 0px;
+		animation: marquee-scroll 27s linear infinite;
 	}
 	.phrases {
+		min-width: max-content;
 		padding-right: 100px;
 		font-size: 20px;
+		i {
+			font-weight: normal;
+		}
+	}
+}
+
+@keyframes marquee-scroll {
+	to {
+		transform: translateX(-50%);
 	}
 }
