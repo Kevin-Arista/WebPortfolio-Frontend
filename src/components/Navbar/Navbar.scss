@@ -1,3 +1,41 @@
+@import "../../styles/theme";
+
 .Navbar {
-	color: white;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 10rem;
+	box-sizing: border-box;
+	z-index: 9999;
+	border-bottom: $theme-yellow-main 1px solid;
+
+	.Logo {
+		.nav-link {
+			img {
+				width: 60px;
+				height: 60px;
+				border-radius: 100%;
+				border: $theme-yellow-main 2px solid;
+			}
+		}
+	}
+
+	.nav-links {
+		.nav-link {
+			color: $theme-yellow-main;
+			text-decoration: none;
+			font-optical-sizing: auto;
+			font-size: 35px;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		display: flex;
+		gap: 5rem;
+	}
 }

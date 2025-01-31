@@ -30,10 +30,11 @@ function LandingCard(props) {
 								<TbFileCv />
 							</span>
 						</a>
-
-						<span className="icon">
-							<CiCoffeeCup />
-						</span>
+						<a href="https://ko-fi.com/kevdev8988" target="_blank">
+							<span className="icon">
+								<CiCoffeeCup />
+							</span>
+						</a>
 					</div>
 				</div>
 				<div className="vl"></div>
