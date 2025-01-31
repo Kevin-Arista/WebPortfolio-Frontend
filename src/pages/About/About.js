@@ -1,5 +1,5 @@
 import "./About.scss";
-import Navbar from "../components/Navbar.js";
+import Navbar from "../../components/Navbar/Navbar";
 
 function About(props) {
 	return (
